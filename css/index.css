@@ -1,0 +1,722 @@
+@import "reset.css";
+@media only screen and (-webkit-device-pixel-ratio: 2) {
+  .border-1px::before {
+    transform: scaleY(0.5);
+  }
+}
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+  .border-1px::before {
+    transform: scaleY(0.333333);
+  }
+}
+.clearFix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+htm,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+htm #app,
+body #app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+htm #app .content,
+body #app .content {
+  height: 100%;
+}
+htm #app .content section,
+body #app .content section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  overflow: hidden;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+htm #app .content section.on,
+body #app .content section.on {
+  display: block;
+}
+htm #app .content section#takeOut .header,
+body #app .content section#takeOut .header {
+  width: 100%;
+  height: 40px;
+  background-color: #02a774;
+  line-height: 40px;
+  color: #fff;
+}
+htm #app .content section#takeOut .header .clickLogin,
+body #app .content section#takeOut .header .clickLogin {
+  color: #d6f1e9;
+  font-size: 15px;
+  padding-left: 22px;
+}
+htm #app .content section#takeOut .header .address,
+body #app .content section#takeOut .header .address {
+  padding-left: 28px;
+  font-size: 18px;
+}
+htm #app .content section#takeOut .header .icon-sousuo,
+body #app .content section#takeOut .header .icon-sousuo {
+  color: #fff;
+  font-size: 22px;
+  padding-left: 16px;
+}
+htm #app .content section#takeOut .swiper-container .swiper-wrapper .swiper-slide .list,
+body #app .content section#takeOut .swiper-container .swiper-wrapper .swiper-slide .list {
+  height: 245px;
+  padding: 0 4px;
+  position: relative;
+}
+htm #app .content section#takeOut .swiper-container .swiper-wrapper .swiper-slide .list:after,
+body #app .content section#takeOut .swiper-container .swiper-wrapper .swiper-slide .list:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 15px;
+  background-color: #f5f5f5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+htm #app .content section#takeOut .swiper-container .swiper-wrapper .swiper-slide .list li,
+body #app .content section#takeOut .swiper-container .swiper-wrapper .swiper-slide .list li {
+  margin-top: 8px;
+  text-align: center;
+  width: 25%;
+  height: 100px;
+  float: left;
+}
+htm #app .content section#takeOut .swiper-container .swiper-wrapper .swiper-slide .list li img,
+body #app .content section#takeOut .swiper-container .swiper-wrapper .swiper-slide .list li img {
+  width: 50px;
+  height: 70px;
+}
+htm #app .content section#takeOut .swiper-container .swiper-wrapper .swiper-slide .list li span,
+body #app .content section#takeOut .swiper-container .swiper-wrapper .swiper-slide .list li span {
+  font-size: 14px;
+}
+htm #app .content section#takeOut .swiper-container .swiper-pagination,
+body #app .content section#takeOut .swiper-container .swiper-pagination {
+  bottom: 18px;
+}
+htm #app .content section#takeOut .shopShow,
+body #app .content section#takeOut .shopShow {
+  padding: 0 10px 0 14px;
+}
+htm #app .content section#takeOut .shopShow .nearbyShops,
+body #app .content section#takeOut .shopShow .nearbyShops {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+}
+htm #app .content section#takeOut .shopShow .nearbyShops .icon-xuanxiang,
+body #app .content section#takeOut .shopShow .nearbyShops .icon-xuanxiang,
+htm #app .content section#takeOut .shopShow .nearbyShops .nearbyText,
+body #app .content section#takeOut .shopShow .nearbyShops .nearbyText {
+  color: #a2a2a2;
+}
+htm #app .content section#takeOut .shopShow .shopList >li,
+body #app .content section#takeOut .shopShow .shopList >li {
+  margin-top: 5px;
+  height: 90px;
+  width: 100%;
+  display: flex;
+}
+htm #app .content section#takeOut .shopShow .shopList >li .shopPhoto,
+body #app .content section#takeOut .shopShow .shopList >li .shopPhoto {
+  height: 100%;
+  width: 25%;
+}
+htm #app .content section#takeOut .shopShow .shopList >li .shopPhoto img,
+body #app .content section#takeOut .shopShow .shopList >li .shopPhoto img {
+  width: 100%;
+}
+htm #app .content section#takeOut .shopShow .shopList >li .shopContent,
+body #app .content section#takeOut .shopShow .shopList >li .shopContent {
+  width: 100%;
+}
+htm #app .content section#takeOut .shopShow .shopList >li .shopContent .shopName,
+body #app .content section#takeOut .shopShow .shopList >li .shopContent .shopName {
+  zoom: 1;
+}
+htm #app .content section#takeOut .shopShow .shopList >li .shopContent .shopName .brand,
+body #app .content section#takeOut .shopShow .shopList >li .shopContent .shopName .brand {
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid #ff0;
+  background-color: #ff0;
+  float: left;
+  margin-left: 5px;
+}
+htm #app .content section#takeOut .shopShow .shopList >li .shopContent .shopName .name,
+body #app .content section#takeOut .shopShow .shopList >li .shopContent .shopName .name {
+  width: 120px;
+  height: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+  margin-left: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+htm #app .content section#takeOut .shopShow .shopList >li .shopContent .shopName .assure,
+body #app .content section#takeOut .shopShow .shopList >li .shopContent .shopName .assure {
+  float: right;
+}
+htm #app .content section#takeOut .shopShow .shopList >li .shopContent .shopName .assure span,
+body #app .content section#takeOut .shopShow .shopList >li .shopContent .shopName .assure span {
+  font-size: 12px;
+  color: #ababab;
+  border: 1px solid #ababab;
+}
+htm #app .content section#takeOut .shopShow .shopList >li .shopContent .stars,
+body #app .content section#takeOut .shopShow .shopList >li .shopContent .stars {
+  margin-top: 12px;
+}
+htm #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .starsList,
+body #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .starsList {
+  margin-top: 4px;
+  float: left;
+}
+htm #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .starsList .star,
+body #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .starsList .star {
+  width: 10px;
+  height: 10px;
+  float: left;
+  background-size: 100% 100%;
+}
+htm #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .starsList .star.on,
+body #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .starsList .star.on {
+  background-image: url("../images/stars/star_on@2x.png");
+}
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+  htm #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .starsList .star.on,
+  body #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .starsList .star.on {
+    background-image: url("../images/stars/star_on@3x.png");
+  }
+}
+htm #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .starsList .star.off,
+body #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .starsList .star.off {
+  background-image: url("../images/stars/star_off@2x.png");
+}
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+  htm #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .starsList .star.off,
+  body #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .starsList .star.off {
+    background-image: url("../images/stars/star_off@3x.png");
+  }
+}
+htm #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .starsList .star.half,
+body #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .starsList .star.half {
+  background-image: url("../images/stars/star_half@2x.png");
+}
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+  htm #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .starsList .star.half,
+  body #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .starsList .star.half {
+    background-image: url("../images/stars/star_half@3x.png");
+  }
+}
+htm #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .grade,
+body #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .grade {
+  margin-left: 2px;
+  color: #ff8942;
+  font-size: 12px;
+}
+htm #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .sales,
+body #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .sales {
+  font-size: 12px;
+  display: inline-block;
+  transform: scale(0.8);
+}
+htm #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .onTime,
+body #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .onTime {
+  float: right;
+}
+htm #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .onTime .courier,
+body #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .onTime .courier {
+  font-size: 12px;
+  color: #fff;
+  background-color: #02a774;
+  border: 1px solid #97dac6;
+}
+htm #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .onTime .inTime,
+body #app .content section#takeOut .shopShow .shopList >li .shopContent .stars .onTime .inTime {
+  font-size: 12px;
+  font-weight: bold;
+  color: #0caa79;
+  border: 1px solid #97dac6;
+}
+htm #app .content section#takeOut .shopShow .shopList >li .shopContent .needMoney,
+body #app .content section#takeOut .shopShow .shopList >li .shopContent .needMoney {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #ababab;
+}
+htm #app .content section#search,
+body #app .content section#search {
+  background-color: #f5f5f5;
+}
+htm #app .content section#search .header,
+body #app .content section#search .header {
+  width: 100%;
+  height: 40px;
+  background-color: #02a774;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+}
+htm #app .content section#search .header h3,
+body #app .content section#search .header h3 {
+  font-size: 20px;
+}
+htm #app .content section#search .header .submit,
+body #app .content section#search .header .submit {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 60px;
+}
+htm #app .content section#search .header .submit input,
+body #app .content section#search .header .submit input {
+  width: 70%;
+  height: 36px;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+htm #app .content section#search .header .submit button,
+body #app .content section#search .header .submit button {
+  background-color: #02a774;
+  height: 36px;
+  width: 20%;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  margin-left: -5px;
+}
+htm #app .content section#indent .header,
+body #app .content section#indent .header {
+  width: 100%;
+  height: 40px;
+  background-color: #02a774;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+}
+htm #app .content section#indent .header h3,
+body #app .content section#indent .header h3 {
+  font-size: 20px;
+}
+htm #app .content section#indent .login,
+body #app .content section#indent .login {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+htm #app .content section#indent .login .goLogin,
+body #app .content section#indent .login .goLogin {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+htm #app .content section#indent .login .goLogin p,
+body #app .content section#indent .login .goLogin p {
+  font-size: 20px;
+  color: #6c6c6c;
+}
+htm #app .content section#indent .login .goLogin button,
+body #app .content section#indent .login .goLogin button {
+  color: #fff;
+  margin-top: 10px;
+  height: 40px;
+  width: 90px;
+  background-color: #02a774;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+htm #app .content section#mine,
+body #app .content section#mine {
+  background-color: #f5f5f5;
+}
+htm #app .content section#mine .header,
+body #app .content section#mine .header {
+  width: 100%;
+  height: 40px;
+  background-color: #02a774;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  color: #f2faf8;
+}
+htm #app .content section#mine .header:after,
+body #app .content section#mine .header:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #93d9c3;
+  position: relative;
+}
+htm #app .content section#mine .register,
+body #app .content section#mine .register {
+  height: 134px;
+  background-color: #02a774;
+  padding: 24px 0 0 12px;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 2px;
+}
+htm #app .content section#mine .register .photo img,
+body #app .content section#mine .register .photo img {
+  height: 90px;
+  border-radius: 50%;
+  float: left;
+}
+htm #app .content section#mine .register .loginOrRegister,
+body #app .content section#mine .register .loginOrRegister {
+  float: left;
+  color: #fff;
+  margin: 14px 0 0 18px;
+}
+htm #app .content section#mine .register .loginOrRegister h2,
+body #app .content section#mine .register .loginOrRegister h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+htm #app .content section#mine .register .loginOrRegister span,
+body #app .content section#mine .register .loginOrRegister span {
+  font-size: 16px;
+  position: relative;
+  left: 20px;
+  top: 16px;
+}
+htm #app .content section#mine .register .loginOrRegister .icon-shouji,
+body #app .content section#mine .register .loginOrRegister .icon-shouji {
+  font-size: 40px;
+  position: absolute;
+  top: 10px;
+  left: -40px;
+}
+htm #app .content section#mine .register .icon-jiantou1,
+body #app .content section#mine .register .icon-jiantou1 {
+  font-size: 12px;
+  color: #9adcc7;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  margin-top: -8px;
+}
+htm #app .content section#mine .myMoney,
+body #app .content section#mine .myMoney {
+  background-color: #fff;
+  display: flex;
+  text-align: center;
+}
+htm #app .content section#mine .myMoney .money,
+body #app .content section#mine .myMoney .money {
+  flex-grow: 1;
+  height: 80px;
+}
+htm #app .content section#mine .myMoney .money .yellow,
+body #app .content section#mine .myMoney .money .yellow {
+  color: #f90;
+  font-size: 28px;
+  font-weight: bold;
+  display: inline-block;
+  padding-top: 14px;
+}
+htm #app .content section#mine .myMoney .money .red,
+body #app .content section#mine .myMoney .money .red {
+  color: #ff5f3e;
+  font-size: 28px;
+  font-weight: bold;
+  display: inline-block;
+  padding-top: 14px;
+}
+htm #app .content section#mine .myMoney .money .green,
+body #app .content section#mine .myMoney .money .green {
+  color: #6bc30d;
+  font-size: 28px;
+  font-weight: bold;
+  display: inline-block;
+  padding-top: 14px;
+}
+htm #app .content section#mine .myMoney .money p,
+body #app .content section#mine .myMoney .money p {
+  margin-top: 10px;
+}
+htm #app .content section#mine .myMoney .line,
+body #app .content section#mine .myMoney .line {
+  height: 80px;
+  width: 1px;
+  background-color: #e6e6e6;
+  position: relative;
+}
+htm #app .content section#mine .previous,
+body #app .content section#mine .previous {
+  width: 100%;
+  height: 15px;
+  background-color: #f5f5f5;
+}
+htm #app .content section#mine .feature,
+body #app .content section#mine .feature {
+  background-color: #fff;
+}
+htm #app .content section#mine .feature li,
+body #app .content section#mine .feature li {
+  height: 60px;
+  line-height: 60px;
+  position: relative;
+}
+htm #app .content section#mine .feature li .leftInfo,
+body #app .content section#mine .feature li .leftInfo {
+  font-size: 36px;
+  color: #4fc19e;
+  position: relative;
+  margin-right: 5px;
+  top: 8px;
+  left: 8px;
+}
+htm #app .content section#mine .feature li .rightInfo,
+body #app .content section#mine .feature li .rightInfo {
+  float: right;
+  font-size: 12px;
+  color: #d7d7d7;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+htm #app .content section#mine .feature li .line,
+body #app .content section#mine .feature li .line {
+  width: 90%;
+  height: 2px;
+  background-color: #f9f9f9;
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+}
+htm #app .content section#mine .feature li .line.boldLine,
+body #app .content section#mine .feature li .line.boldLine {
+  position: relative;
+  top: 5px;
+  width: 100%;
+  height: 15px;
+}
+htm #app .content section#mine .feature li.last,
+body #app .content section#mine .feature li.last {
+  margin-top: 16px;
+}
+htm #app .content section#login,
+body #app .content section#login {
+  text-align: center;
+}
+htm #app .content section#login .goBack,
+body #app .content section#login .goBack {
+  position: absolute;
+  top: 4px;
+  left: 6px;
+}
+htm #app .content section#login .goBack .icon-jiantou2,
+body #app .content section#login .goBack .icon-jiantou2 {
+  font-size: 22px;
+  color: #acacac;
+}
+htm #app .content section#login h1,
+body #app .content section#login h1 {
+  color: #02a774;
+  font-size: 45px;
+  font-weight: bold;
+  margin: 80px 0 50px 0;
+}
+htm #app .content section#login .form,
+body #app .content section#login .form {
+  position: relative;
+}
+htm #app .content section#login .form .loginMode.active,
+body #app .content section#login .form .loginMode.active {
+  color: #02a774;
+  border-bottom: 3px solid #22b286;
+}
+htm #app .content section#login .form >div,
+body #app .content section#login .form >div {
+  display: none;
+}
+htm #app .content section#login .form div.on,
+body #app .content section#login .form div.on {
+  display: block;
+}
+htm #app .content section#login .form div.on input,
+body #app .content section#login .form div.on input {
+  margin-top: 12px;
+  width: 80%;
+  height: 52px;
+  border: 2px solid #f3f3f3;
+  border-radius: 2px;
+}
+htm #app .content section#login .form div.on .verify,
+body #app .content section#login .form div.on .verify {
+  position: absolute;
+  top: 50px;
+  right: 14%;
+  color: #d1d1d1;
+}
+htm #app .content section#login .form div.on .deal,
+body #app .content section#login .form div.on .deal {
+  width: 82%;
+  margin: 20px auto 0;
+}
+htm #app .content section#login .form div.on .deal a,
+body #app .content section#login .form div.on .deal a {
+  color: #02a774;
+}
+htm #app .content section#login .login,
+body #app .content section#login .login {
+  margin-top: 38px;
+}
+htm #app .content section#login .login .aboutUs,
+body #app .content section#login .login .aboutUs {
+  margin-top: 16px;
+  font-size: 14px;
+}
+htm #app .content section#login .login button,
+body #app .content section#login .login button {
+  color: #fff;
+  outline: none;
+  border: none;
+  background-color: #4cd96f;
+  width: 80%;
+  height: 48px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+htm #app .content section#oldUserLogin,
+body #app .content section#oldUserLogin {
+  text-align: center;
+}
+htm #app .content section#oldUserLogin .goBack,
+body #app .content section#oldUserLogin .goBack {
+  position: absolute;
+  top: 4px;
+  left: 6px;
+}
+htm #app .content section#oldUserLogin .goBack .icon-jiantou2,
+body #app .content section#oldUserLogin .goBack .icon-jiantou2 {
+  font-size: 22px;
+  color: #acacac;
+}
+htm #app .content section#oldUserLogin h1,
+body #app .content section#oldUserLogin h1 {
+  color: #02a774;
+  font-size: 45px;
+  font-weight: bold;
+  margin: 80px 0 50px 0;
+}
+htm #app .content section#oldUserLogin .form,
+body #app .content section#oldUserLogin .form {
+  position: relative;
+}
+htm #app .content section#oldUserLogin .form .loginMode.active,
+body #app .content section#oldUserLogin .form .loginMode.active {
+  color: #02a774;
+  border-bottom: 3px solid #22b286;
+}
+htm #app .content section#oldUserLogin .form input,
+body #app .content section#oldUserLogin .form input {
+  margin-top: 12px;
+  width: 80%;
+  height: 52px;
+  border: 2px solid #f3f3f3;
+  border-radius: 2px;
+}
+htm #app .content section#oldUserLogin .form .verify,
+body #app .content section#oldUserLogin .form .verify {
+  position: absolute;
+  top: 50px;
+  right: 14%;
+  color: #d1d1d1;
+}
+htm #app .content section#oldUserLogin .deal,
+body #app .content section#oldUserLogin .deal {
+  width: 82%;
+  margin: 10px auto 0;
+}
+htm #app .content section#oldUserLogin .deal a,
+body #app .content section#oldUserLogin .deal a {
+  color: #02a774;
+}
+htm #app .content section#oldUserLogin .login,
+body #app .content section#oldUserLogin .login {
+  margin-top: 38px;
+}
+htm #app .content section#oldUserLogin .login .aboutUs,
+body #app .content section#oldUserLogin .login .aboutUs {
+  margin-top: 16px;
+  font-size: 14px;
+}
+htm #app .content section#oldUserLogin .login button,
+body #app .content section#oldUserLogin .login button {
+  color: #fff;
+  outline: none;
+  border: none;
+  background-color: #4cd96f;
+  width: 80%;
+  height: 48px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+htm #app .footer,
+body #app .footer {
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  margin-top: -50px;
+  position: relative;
+  display: flex;
+}
+htm #app .footer::before,
+body #app .footer::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+htm #app .footer a,
+body #app .footer a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+htm #app .footer a.active,
+body #app .footer a.active {
+  color: #02a774;
+}
+htm #app .footer a .iconfont,
+body #app .footer a .iconfont {
+  font-size: 18px;
+}
+htm #app .footer a .footerText,
+body #app .footer a .footerText {
+  font-size: 14px;
+}
